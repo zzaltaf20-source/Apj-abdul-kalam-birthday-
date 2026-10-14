@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dr. A.P.J. Abdul Kalam — An Immortal Tribute</title>
+  <meta name="description" content="A cinematic, editorial tribute to Bharat Ratna Dr. A.P.J. Abdul Kalam — Missile Man of India. 15 October, Youth Day." />
+  <script>document.documentElement.classList.add('js')</script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500&family=IBM+Plex+Mono:wght@400;500&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="is-muted">
+
+  <!-- ══════════ FILM GRAIN ══════════ -->
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- ══════════ ENTRY GATE ══════════ -->
+  <div class="gate" id="gate" role="dialog" aria-label="Welcome">
+    <div class="gate__inner">
+      <p class="gate__mark" aria-hidden="true">✦</p>
+      <p class="gate__eyebrow mono">15 OCTOBER · AN IMMORTAL TRIBUTE</p>
+      <h1 class="gate__name">Dr. A.P.J. <em>Abdul Kalam</em></h1>
+      <p class="gate__dates mono">1931 — ETERNITY</p>
+      <div class="gate__rule" aria-hidden="true"></div>
+      <button class="gate__enter mono" id="gateEnter" type="button">
+        <span>Begin with Sound</span><span class="gate__arrow" aria-hidden="true">→</span>
+      </button>
+      <button class="gate__silent mono" id="gateSilent" type="button">enter in silence</button>
+    </div>
+  </div>
+
+  <!-- ══════════ FIXED CINEMATIC STAGE ══════════ -->
+  <div class="stage" aria-hidden="true">
+    <video class="stage__video is-active" src="assets/video-01.mp4" muted loop playsinline preload="auto" disablepictureinpicture></video>
+    <video class="stage__video" src="assets/video-02.mp4" muted loop playsinline preload="auto" disablepictureinpicture></video>
+    <video class="stage__video" src="assets/video-03.mp4" muted loop playsinline preload="auto" disablepictureinpicture></video>
+    <video class="stage__video" src="assets/video-04.mp4" muted loop playsinline preload="auto" disablepictureinpicture></video>
+    <div class="stage__scrim"></div>
+  </div>
+  <!-- Dr. Kalam portrait — People's President scene -->
+<div class="president-portrait-container" id="presidentPortrait">
+  <img class="president-portrait-img" src="kalam-president.png" alt="Dr. A.P.J. Abdul Kalam — The People's President" />
+</div>
+
+  <!-- ══════════ PROGRESS HAIRLINE ══════════ -->
+  <div class="progress" aria-hidden="true"><span id="progressBar"></span></div>
+
+  <!-- ══════════ NAVIGATION ══════════ -->
+  <header class="nav" id="topNav">
+    <div class="nav__brand">
+      <span class="nav__date">15 OCTOBER</span>
+      <span class="nav__divider" aria-hidden="true"></span>
+      <span class="nav__tag mono">YOUTH DAY · INDIA</span>
+    </div>
+    <p class="nav__scene mono" id="sceneLabel">01 · THE AWAKENING</p>
+    <button class="nav__audio" id="audioToggle" type="button" aria-label="Toggle sound">
+      <span class="eq" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+      <span class="nav__audio-label mono" id="audioLabel">SOUND ON</span>
+    </button>
+  </header>
+
+  <!-- ══════════ CHAPTER RAIL ══════════ -->
+  <aside class="rail" aria-label="Chapter navigation">
+    <a class="rail__item is-active" href="#awakening" data-rail="0"><span class="rail__name">The Awakening</span><span class="rail__num mono">01</span></a>
+    <a class="rail__item" href="#architect" data-rail="1"><span class="rail__name">The Architect</span><span class="rail__num mono">02</span></a>
+    <a class="rail__item" href="#ascent" data-rail="2"><span class="rail__name">The Ascent</span><span class="rail__num mono">03</span></a>
+    <a class="rail__item" href="#immortal" data-rail="3"><span class="rail__name">The Immortal</span><span class="rail__num mono">04</span></a>
+  </aside>
+
+  <main>
+
+    <!-- ══════════ HERO ══════════ -->
+    <section class="hero" data-scene="0" data-reveal>
+      <p class="hero__kicker mono" data-scramble>MISSILE MAN OF INDIA · 1931 — ETERNITY</p>
+      <h2 class="hero__title">
+        <span class="line"><span class="line__inner">Dreams that</span></span>
+        <span class="line"><span class="line__inner">refused</span></span>
+        <span class="line"><span class="line__inner">to <em>sleep.</em></span></span>
+      </h2>
+      <div class="hero__foot">
+        <p class="hero__quote" data-rise>“Dream is not that which you see while sleeping; it is something that does not let you sleep.”</p>
+        <div class="hero__scroll" data-rise style="transition-delay:.2s">
+          <span class="hero__scroll-line" aria-hidden="true"></span>
+          <span class="mono">SCROLL</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════ CHAPTER 01 — THE AWAKENING ══════════ -->
+    <section class="chapter" id="awakening" data-scene="0" data-reveal>
+      <span class="chapter__ghost" aria-hidden="true">01</span>
+      <div class="chapter__panel">
+        <p class="chapter__eyebrow mono" data-scramble>CHAPTER 01 · 1931 — 1980 · RAMESWARAM</p>
+        <h3 class="chapter__title">
+          <span class="line"><span class="line__inner">From the shores</span></span>
+          <span class="line"><span class="line__inner">of Rameswaram</span></span>
+          <span class="line"><span class="line__inner"><em>to the stars</em></span></span>
+        </h3>
+        <div class="chapter__rule" aria-hidden="true"></div>
+        <p class="chapter__body" data-rise>He rose before dawn, distributing newspapers along the shores of Rameswaram — yet his gaze never left the sky. From selling headlines to writing history, he led India’s first Satellite Launch Vehicle, SLV-3, placing a young nation among the elite few who could touch orbit.</p>
+        <div class="chapter__meta" data-rise style="transition-delay:.15s">
+          <div class="chapter__meta-item"><span class="chapter__meta-num">1969</span><span class="chapter__meta-label mono">JOINS ISRO</span></div>
+          <div class="chapter__meta-item"><span class="chapter__meta-num">1980</span><span class="chapter__meta-label mono">SLV-3 · ROHINI IN ORBIT</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════ CHAPTER 02 — THE ARCHITECT ══════════ -->
+    <section class="chapter chapter--right" id="architect" data-scene="1" data-reveal>
+      <span class="chapter__ghost" aria-hidden="true">02</span>
+      <div class="chapter__panel">
+        <p class="chapter__eyebrow mono" data-scramble>CHAPTER 02 · DEFENCE · AGNI &amp; PRITHVI</p>
+        <h3 class="chapter__title">
+          <span class="line"><span class="line__inner">The architect</span></span>
+          <span class="line"><span class="line__inner">of <em>sovereign fire</em></span></span>
+        </h3>
+        <div class="chapter__rule" aria-hidden="true"></div>
+        <p class="chapter__body" data-rise>As chief architect of the Integrated Guided Missile Development Programme, he forged Agni and Prithvi into sovereign shields — indigenous, fearless, uncompromising. The boy from the seashore had become the Missile Man of India, guarding a billion dreams.</p>
+        <div class="chapter__meta" data-rise style="transition-delay:.15s">
+          <div class="chapter__meta-item"><span class="chapter__meta-num">05</span><span class="chapter__meta-label mono">MISSILES · IGMDP</span></div>
+          <div class="chapter__meta-item"><span class="chapter__meta-num">1998</span><span class="chapter__meta-label mono">POKHRAN-II</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════ INTERLUDE — MARQUEE ══════════ -->
+    <section class="interlude" data-scene="2" aria-label="Words of Kalam">
+      <div class="marquee">
+        <div class="marquee__track">
+          <div class="marquee__group">
+            <span>“If you want to shine like the sun, first burn like the sun.”</span><i>✦</i>
+            <span>“Thinking is the capital, enterprise is the way, hard work is the solution.”</span><i>✦</i>
+            <span>“One best book is equal to a hundred good friends.”</span><i>✦</i>
+          </div>
+          <div class="marquee__group" aria-hidden="true">
+            <span>“If you want to shine like the sun, first burn like the sun.”</span><i>✦</i>
+            <span>“Thinking is the capital, enterprise is the way, hard work is the solution.”</span><i>✦</i>
+            <span>“One best book is equal to a hundred good friends.”</span><i>✦</i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════ CHAPTER 03 — THE ASCENT ══════════ -->
+    <section class="chapter" id="ascent" data-scene="2" data-reveal>
+      <span class="chapter__ghost" aria-hidden="true">03</span>
+      <div class="chapter__panel">
+        <p class="chapter__eyebrow mono" data-scramble>CHAPTER 03 · LEGACY · VISION 2020</p>
+        <h3 class="chapter__title">
+          <span class="line"><span class="line__inner">The People’s</span></span>
+          <span class="line"><span class="line__inner"><em>President</em></span></span>
+        </h3>
+        <div class="chapter__rule" aria-hidden="true"></div>
+        <p class="chapter__body" data-rise>From Rashtrapati Bhavan to the smallest classrooms of remote India, he carried one mission — to ignite young minds. Vision 2020 was never a policy; it was a prayer he placed in every child’s hand, proving that humility and character can conquer any sky.</p>
+        <div class="chapter__meta" data-rise style="transition-delay:.15s">
+          <div class="chapter__meta-item"><span class="chapter__meta-num">2002</span><span class="chapter__meta-label mono">11TH PRESIDENT OF INDIA</span></div>
+          <div class="chapter__meta-item"><span class="chapter__meta-num">2020</span><span class="chapter__meta-label mono">THE VISION HE GAVE US</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════ THE CONSTELLATION — TIMELINE ══════════ -->
+    <section class="timeline" data-scene="2" data-reveal>
+      <header class="timeline__head">
+        <p class="timeline__eyebrow mono" data-scramble>THE CONSTELLATION · A LIFE IN MILESTONES</p>
+        <h3 class="timeline__title">
+          <span class="line"><span class="line__inner">Six moments that</span></span>
+          <span class="line"><span class="line__inner">became <em>eternity</em></span></span>
+        </h3>
+      </header>
+      <ol class="timeline__list">
+        <li data-rise><span class="timeline__year mono">1931</span><h4>Born by the sea</h4><p>Rameswaram, Tamil Nadu — a childhood shaped by humility, faith and hard work.</p></li>
+        <li data-rise style="transition-delay:.06s"><span class="timeline__year mono">1960</span><h4>Wings take shape</h4><p>Aerospace engineering at the Madras Institute of Technology. The sky becomes a blueprint.</p></li>
+        <li data-rise style="transition-delay:.12s"><span class="timeline__year mono">1980</span><h4>India reaches orbit</h4><p>SLV-3 places Rohini into space — a young nation joins an elite cosmic club.</p></li>
+        <li data-rise style="transition-delay:.18s"><span class="timeline__year mono">1998</span><h4>The shield of fire</h4><p>Pokhran-II and the Agni missiles. The world learns a new title — Missile Man of India.</p></li>
+        <li data-rise style="transition-delay:.24s"><span class="timeline__year mono">2002</span><h4>The People’s President</h4><p>Rashtrapati Bhavan opens its doors to a billion dreams.</p></li>
+        <li data-rise style="transition-delay:.3s"><span class="timeline__year mono">2015</span><h4>Immortal</h4><p>Falls mid-lecture at IIM Shillong — teaching, dreaming, burning till the very last breath.</p></li>
+      </ol>
+    </section>
+
+    <!-- ══════════ FINALE ══════════ -->
+    <section class="finale" id="immortal" data-scene="3" data-reveal>
+      <img class="finale__portrait" id="finalePortrait" src="assets/portrait.png" alt="" />
+      <div class="finale__orbit" aria-hidden="true"></div>
+      <div class="finale__content">
+        <p class="finale__eyebrow mono" data-scramble>15 OCTOBER · YOUTH DAY · CELEBRATING IMMORTAL GRACE</p>
+        <h2 class="finale__title">
+          <span class="line"><span class="line__inner">Happy Birthday,</span></span>
+          <span class="line"><span class="line__inner"><em>Missile Man</em></span></span>
+        </h2>
+        <p class="finale__sub" data-rise>Bharat Ratna Dr. A.P.J. Abdul Kalam — your dreams continue to soar across the cosmos.</p>
+        <button class="finale__replay mono" id="replayBtn" type="button" data-rise style="transition-delay:.2s">Replay the Journey <span aria-hidden="true">↑</span></button>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <span class="mono">AN IMMORTAL TRIBUTE · 15 OCTOBER</span>
+    <span class="footer__dot" aria-hidden="true">✦</span>
+    <span class="mono">YOUTH DAY · REPUBLIC OF INDIA</span>
+  </footer>
+
+  <audio id="bgMusic" src="assets/music.mp3" loop preload="auto"></audio>
+  <script src="script.js"></script>
+</body>
+</html>
